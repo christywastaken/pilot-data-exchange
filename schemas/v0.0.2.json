@@ -59,8 +59,7 @@
         }
       },
       "required": [
-        "imoNumber",
-        "shipName"
+        "imoNumber"
       ]
     },
     "additional": {
