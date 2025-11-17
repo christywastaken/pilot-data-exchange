@@ -1,0 +1,19 @@
+{
+  "imoCompendium": {
+    "imoNumber": "9876543",
+    "shipName": "MV Rotterdam Star",
+    "draughtOverall": 12.5,
+    "draughtForward": 12.3,
+    "draughtAft": 12.7,
+    "arrivalPortCode": "NLRTM",
+    "departurePortCode": "DEHAM",
+    "arrivalActual": "2025-11-17T14:30:00Z",
+    "arrivalEstimated": "2025-11-17T15:00:00Z",
+    "shipTrueHeading": 270.5
+  },
+  "additional": {
+    "arrivalEstimateBerth": "2025-11-17T16:00:00Z",
+    "arrivalEstimatedPort": "2025-11-17T15:30:00Z",
+    "arrivalEstimatedPilotBoardingPlace": "2025-11-17T15:15:00Z"
+  }
+}
