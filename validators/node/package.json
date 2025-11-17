@@ -1,25 +1,40 @@
 {
-  "name": "@standard-schema/validator-node",
-  "version": "0.1.0",
-  "description": "Node.js TypeScript validator for Standard Schema JSON",
+  "name": "@christywastaken/validator-node",
+  "version": "0.0.2",
+  "description": "Node.js TypeScript validator for Standard Schema JSON v0.0.2",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
     }
   },
   "files": [
-    "dist"
+    "dist/src",
+    "README.md",
+    "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christywastaken/pilot-data-exchange.git",
+    "directory": "validators/node"
+  },
+  "homepage": "https://github.com/christywastaken/pilot-data-exchange#readme",
+  "bugs": {
+    "url": "https://github.com/christywastaken/pilot-data-exchange/issues"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch examples/express-server.ts",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "example": "node dist/examples/express-server.js"
+    "example": "node dist/examples/express-server.js",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
     "standard-schema",

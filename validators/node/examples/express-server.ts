@@ -1,5 +1,5 @@
 
-import { RotterdamPilotSchema } from '../src/index.js'
+import { ShipToShoreSchema } from '../src/index.js'
 import express from 'express'
 import { ZodError } from 'zod'
 
@@ -18,7 +18,7 @@ function formatZodError(error: ZodError) {
 
 app.post('/rotterdam-pilot', (req, res) => {
   try {
-    const validatedData = RotterdamPilotSchema.parse(req.body)
+    const validatedData = ShipToShoreSchema.parse(req.body)
     console.log(validatedData)
     return res.status(200).json({ 
       success: true, 

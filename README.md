@@ -2,6 +2,9 @@
 
 Repository for JSON schemas and validators for Rotterdam pilot ship-to-shore operational data exchange, based on the IMO Compendium (FAL.5/Circ. 55).
 
+## Note: 
+This is currently an early stage prototype. Recommendations / issues / PRs welcome.
+
 ## Overview
 
 This project provides:
@@ -12,7 +15,7 @@ This project provides:
 ## Repository Structure
 
 ```
-standard-schema-json/
+pilot-data-exchange/
 ├── schemas/              # JSON Schema definitions
 ├── validators/
 │   ├── node/            # TypeScript/Node.js validator

@@ -38,10 +38,10 @@ This schema extends the core IMO fields with an `additional` section containing:
 
 ### Required Fields
 - `imoNumber` (string) - IMO ship identification number from certificate
-- `shipName` (string) - Ship name from IMO certificates
 
 ### Optional Fields
 - `draughtOverall` (number, ≥0) - Maximum present static draught in meters
+- `shipName` (string) - Ship name from IMO certificates
 - `draughtForward` (number, ≥0) - Forward draught in meters
 - `draughtAft` (number, ≥0) - Aft draught in meters
 - `arrivalPortCode` (string) - Code for arrival port
