@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "Version: 2.0.0 | IMO Compendium version: FAL.5/Circ. 55- IMO Compendium as approved by FAL 49 in 2025 | Schema for ship to shore operational data exchange - Selected fields for pilot demonstration",
+  "description": "Version: 0.0.2 | IMO Compendium version: FAL.5/Circ. 55- IMO Compendium as approved by FAL 49 in 2025 | Schema for ship to shore operational data exchange - Selected fields for pilot demonstration",
   "title": "Ship to Shore Operational Data Exchange – Pilot",
   "type": "object",
   "additionalProperties": false,
