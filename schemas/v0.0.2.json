@@ -12,47 +12,47 @@
       "properties": {
         "imoNumber": {
           "type": "string",
-          "description": "imoNumber: IMO0140 | description: The ship identification number shown on its IMO ship's certificate."
+          "description": "IMO Data Number: IMO0140 | description: The ship identification number shown on its IMO ship's certificate."
         },
         "shipName": {
-          "description": "imoNumber: IMO0142 | description: The ship's name shown on the IMO ship's certificates.",
+          "description": "IMO Data Number: IMO0142 | description: The ship's name shown on the IMO ship's certificates.",
           "type": "string"
         },
         "draughtOverall": {
-          "description": "imoNumber: IMO0357 | description: Maximum ship present static draught in meters and centimeters. | Unit: metres",
+          "description": "IMO Data Number: IMO0357 | description: Maximum ship present static draught in meters and centimeters. | Unit: metres",
           "type": "number",
           "minimum": 0
         },
         "draughtForward": {
-          "description": "imoNumber: IMO0621 | description: The vertical distance in metres between the waterline and the bottom of the hull, with the thickness of the hull included from forward. | Unit: metres",
+          "description": "IMO Data Number: IMO0621 | description: The vertical distance in metres between the waterline and the bottom of the hull, with the thickness of the hull included from forward. | Unit: metres",
           "type": "number",
           "minimum": 0
         },
         "draughtAft": {
-          "description": "imoNumber: IMO0622 | description: The vertical distance in metres between the waterline and the bottom of the hull, with the thickness of the hull included from aft. | Unit: metres",
+          "description": "IMO Data Number: IMO0622 | description: The vertical distance in metres between the waterline and the bottom of the hull, with the thickness of the hull included from aft. | Unit: metres",
           "type": "number",
           "minimum": 0
         },
         "arrivalPortCode": {
-          "description": "imoNumber: IMO0108 | description: A code representing the port where the ship arrives.",
+          "description": "IMO Data Number: IMO0108 | description: A code representing the port where the ship arrives.",
           "type": "string"
         },
         "departurePortCode": {
-          "description": "imoNumber: IMO0112 | description: A name and country of the port from which the ship departs.",
+          "description": "IMO Data Number: IMO0112 | description: A name and country of the port from which the ship departs.",
           "type": "string"
         },
         "arrivalActual": {
-          "description": "imoNumber: IMO0063 | description: The date and time the ship arrives at a specified location, ATA.",
+          "description": "IMO Data Number: IMO0063 | description: The date and time the ship arrives at a specified location, ATA.",
           "type": "string",
           "format": "date-time"
         },
         "arrivalEstimated": {
-          "description": "imoNumber: IMO0064 | description: The date and time the ship is estimated to arrive at a specified location, ETA.",
+          "description": "IMO Data Number: IMO0064 | description: The date and time the ship is estimated to arrive at a specified location, ETA.",
           "type": "string",
           "format": "date-time"
         },
         "shipTrueHeading": {
-          "description": "imoNumber: IMO0620 | description: The direction in which the ship is pointing with respect to true north, expressed in degrees.",
+          "description": "IMO Data Number: IMO0620 | description: The direction in which the ship is pointing with respect to true north, expressed in degrees.",
           "type": "number",
           "minimum": 0,
           "maximum": 360
