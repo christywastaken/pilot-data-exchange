@@ -1,10 +1,7 @@
 {
-  "name": "@christywastaken/validator-node",
+  "name": "@standard-schema/validator-node",
   "version": "0.0.2",
   "description": "Node.js TypeScript validator for Standard Schema JSON v0.0.2",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
