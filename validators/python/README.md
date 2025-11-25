@@ -13,14 +13,11 @@ Python validator for Standard Schema JSON v0.0.1.
 
 ## Installation
 
-```bash
-pip install -e .
-```
-
-Or install dependencies directly:
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management.
 
 ```bash
-pip install -r requirements.txt
+# Install dependencies and sync environment
+uv sync
 ```
 
 ## Usage
@@ -51,7 +48,7 @@ except ValidationError as e:
 See `examples/flask_server.py` for a complete Flask server example:
 
 ```bash
-python examples/flask_server.py
+uv run examples/flask_server.py
 ```
 
 Then test with:
@@ -69,19 +66,7 @@ The validator implements the Ship to Shore Operational Data Exchange schema v0.0
 - **IMO Compendium** (FAL.5/Circ. 55): IMO number, ship details, draughts, port codes, arrival times, heading
 - **Additional Fields**: Extended ETA fields for berth, port, and pilot boarding place
 
-## Development
 
-### Type Checking
-
-```bash
-mypy src/
-```
-
-### Testing
-
-```bash
-pytest
-```
 
 ## License
 
