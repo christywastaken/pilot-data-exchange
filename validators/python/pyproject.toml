@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "standard-schema-validator-python"
+version = "0.0.1"
+description = "Python validator for Standard Schema JSON v0.0.1"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Kapil Parekh", email = "kapil.parekh@ceto.ai"},
+    {name = "Christian Harrison", email = "Christian.Harrison@ceto.ai"}
+]
+keywords = ["standard-schema", "validator", "python", "json", "pydantic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "flask>=3.1.2",
+    "pydantic>=2.0.0",
+    "requests>=2.32.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flask>=3.0.0",
+    "pytest>=7.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/christywastaken/pilot-data-exchange"
+Repository = "https://github.com/christywastaken/pilot-data-exchange.git"
+Issues = "https://github.com/christywastaken/pilot-data-exchange/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
